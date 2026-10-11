@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Solutions - AgriConnect</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Storage Section */
+        .storage-section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .storage-section h2 {
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            margin-bottom: 1rem;
+        }
+
+        .storage-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .option-card {
+            background: #f8f8f8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .option-card:hover {
+            transform: scale(1.05);
+            background: #e0ffe0;
+        }
+
+        /* Facility List */
+        .facility-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .facility-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .facility-list li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .facility-list li i {
+            color: #28a745;
+            margin-right: 0.5rem;
+        }
+
+        /* Fade-in Animation */
+        .animated {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+        }
+
+        .animated.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h2 {
+    font-size: 2rem;
+    font-weight: 500; /* Lighter than bold */
+    font-family: "Poppins", sans-serif; /* A modern, softer font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <h1>AgriConnect</h1>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="market.html"><i class="fas fa-chart-line"></i> Market</a></li>
+                    <li><a href="schemes.html"><i class="fas fa-file-invoice"></i> Schemes</a></li>
+                    <li><a href="weather.html"><i class="fas fa-cloud-sun"></i> Weather</a></li>
+                    <li><a href="storage.html"><i class="fas fa-warehouse"></i> Storage</a></li>
+                    <li><a href="equipment.html"><i class="fas fa-tractor"></i> Equipment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="storage-section animated">
+            <h2>Post-Harvest Storage Solutions</h2>
+            <div class="storage-options">
+                <div class="option-card">
+                    <h3><i class="fas fa-snowflake"></i> Cold Storage</h3>
+                    <p>Ideal for perishable goods like fruits and vegetables.</p>
+                </div>
+                <div class="option-card">
+                    <h3><i class="fas fa-sun"></i> Solar Drying</h3>
+                    <p>Eco-friendly drying method for grains and spices.</p>
+                </div>
+                <div class="option-card">
+                    <h3><i class="fas fa-box"></i> Warehousing</h3>
+                    <p>Bulk storage for grains, pulses, and farm produce.</p>
+                </div>
+            </div>
+
+            <h2>Government Subsidies</h2>
+            <p>Subsidies available for building storage facilities.</p>
+
+            <h2>Nearby Storage Facilities</h2>
+            <div class="facility-box">
+                <ul class="facility-list">
+                    <li><i class="fas fa-warehouse"></i> Facility 1 - Contact: 1234567890</li>
+                    <li><i class="fas fa-warehouse"></i> Facility 2 - Contact: 0987654321</li>
+                    <li><i class="fas fa-warehouse"></i> Facility 3 - Contact: 1122334455</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> 1800-123-4567</p>
+                <p><i class="fas fa-envelope"></i> support@agriconnect.in</p>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 AgriConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animation on scroll
+        document.addEventListener("DOMContentLoaded", function () {
+            const animatedElements = document.querySelectorAll(".animated");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            });
+
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
